@@ -1,0 +1,61 @@
+{
+  "name": "stockifly",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Stockifly",
+  "repository": "",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "cross-env NODE_ENV=development vite",
+    "build": "cross-env NODE_ENV=production vite build",
+    "postinstall": "cpy --flat ./node_modules/framework7-icons/fonts/*.* ./src/fonts/ && cpy --flat ./node_modules/material-icons/iconfont/*.* ./src/fonts/",
+    "ionic:build": "npm run build",
+    "ionic:serve": "npm run start"
+  },
+  "browserslist": [
+    "IOS >= 15",
+    "Safari >= 15",
+    "last 5 Chrome versions",
+    "last 5 Firefox versions"
+  ],
+  "dependencies": {
+    "@capacitor-mlkit/barcode-scanning": "5.3.0-dev.966ebeb.1703101506",
+    "@capacitor-community/native-audio": "5.0.1",
+    "@capacitor/android": "5.6.0",
+    "@capacitor/app": "5.0.6",
+    "@capacitor/browser": "5.1.0",
+    "@capacitor/core": "5.6.0",
+    "@capacitor/filesystem": "^5.2.1",
+    "@capacitor/ios": "5.6.0",
+    "@capacitor/keyboard": "5.0.7",
+    "@capacitor/preferences": "^5.0.7",
+    "@capacitor/share": "^5.0.7",
+    "@capacitor/splash-screen": "5.0.6",
+    "@capacitor/status-bar": "5.0.6",
+    "axios": "1.6.2",
+    "dayjs": "1.11.10",
+    "dom7": "4.0.6",
+    "framework7": "8.3.0",
+    "framework7-icons": "5.0.5",
+    "framework7-vue": "8.3.0",
+    "lodash-es": "4.17.21",
+    "material-icons": "1.13.12",
+    "pinia": "2.1.7",
+    "skeleton-elements": "4.0.1",
+    "swiper": "11.0.3",
+    "vue": "3.3.7",
+    "vue-i18n": "9.8.0"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.4",
+    "@capacitor/cli": "5.6.0",
+    "@vitejs/plugin-vue": "4.4.0",
+    "@vue/compiler-sfc": "3.3.7",
+    "cpy-cli": "5.0.0",
+    "cross-env": "7.0.3",
+    "less": "4.2.0",
+    "postcss-preset-env": "9.2.0",
+    "vite": "4.5.0"
+  }
+}
