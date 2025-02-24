@@ -1,0 +1,7 @@
+{
+  "name": "SoujanyaBillX",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "custom"
+}

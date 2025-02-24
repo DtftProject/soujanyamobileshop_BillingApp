@@ -1,0 +1,276 @@
+/* Fonts */
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik/Rubik-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik/Rubik-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik/Rubik-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+:root {
+  --title-color: #1e2b47;
+  --text-color: #828d9c;
+  --background-color: #fff;
+  --light-gray: #ecf1f5;
+  --f7-text-color: var(--title-color);
+  --block-shadow: 0px 2px 10px 0px #555f6921;
+  --f7-page-toolbar-bottom-offset: 50px;
+  --f7-navbar-height: 50px;
+  --f7-list-item-border-color: rgba(0, 0, 0, 0.12);
+  --f7-list-outline-border-color: rgba(0, 0, 0, 0.12);
+  --f7-list-chevron-icon-color: #8896b8;
+  --swiper-pagination-color: var(--title-color);
+}
+
+:root .dark {
+  --title-color: #fff;
+  --text-color: #9aa9b2;
+  --background-color: #001119;
+  --light-gray: #0e232d;
+}
+
+body {
+  font-family: "Rubik", -apple-system, SF Pro Text, SF UI Text, system-ui,
+    Helvetica Neue, Helvetica, Arial, sans-serif;
+  background: transparent !important;
+}
+
+// Start - My Written CSS
+
+.login-div {
+  margin-left: calc(var(--f7-block-padding-horizontal) + var(--f7-safe-area-left));
+  margin-right: calc(var(--f7-block-padding-horizontal) + var(--f7-safe-area-right));
+}
+
+// .page-content class use for background color of app
+.page-content {
+  background: #efefef;
+}
+
+.login-page-logo {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.login-page-logo img {
+  width: 200px;
+}
+
+.login-error-message {
+  font-size: 15px;
+  font-weight: bold;
+  color: #ff5353;
+  margin-left: calc(var(--f7-block-padding-horizontal) + var(--f7-safe-area-left));
+  margin-right: calc(var(--f7-block-padding-horizontal) + var(--f7-safe-area-right));
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff2f0;
+  border: 1px solid #ffccc7;
+}
+
+.navbar-action-btn {
+  width: 38px !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+.filter-dot-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.btn {
+  height: 44px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-red {
+  color: red;
+}
+
+.text-green {
+  color: green;
+}
+
+.required-input {
+  color: red;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.input-prefix {
+  margin-top: 8px;
+  margin-right: 5px;
+}
+
+.input-suffix {
+  margin-top: 8px;
+  margin-left: 5px;
+}
+
+.align-content {
+  margin-left: calc(var(--f7-block-padding-horizontal) + var(--f7-safe-area-left));
+  margin-right: calc(var(--f7-block-padding-horizontal) + var(--f7-safe-area-right));
+}
+
+/* Margin Classes */
+
+.margin-l5 {
+  margin-left: 5px;
+}
+
+.margin-l10 {
+  margin-left: 10px;
+}
+
+.margin-t5 {
+  margin-top: 5px;
+}
+
+.margin-t6 {
+  margin-top: 6px;
+}
+
+.margin-t12 {
+  margin-top: 12px;
+}
+
+.margin-t16 {
+  margin-top: 16px;
+}
+
+.margin-b5 {
+  margin-bottom: 5px;
+}
+
+.margin-t10 {
+  margin-top: 10px;
+}
+
+.margin-b10 {
+  margin-bottom: 10px;
+}
+
+.margin-b16 {
+  margin-bottom: 16px;
+}
+
+.gap-8 {
+  gap: 8px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.mt-0 {
+  margin-top: 0px;
+}
+
+.pt-16 {
+  padding-top: 16px;
+}
+
+.pl-16 {
+  padding-left: 16px;
+}
+
+.pr-16 {
+  padding-right: 16px;
+}
+
+// End
+
+// End My Written CSS
+
+/* Lists */
+
+.list {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.list li {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.list .item-inner {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.list .item-title {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* 4. Navbar */
+
+.navbar-bg,
+.toolbar {
+  background-color: var(--background-color) !important;
+}
+
+.dark .navbar-bg,
+.dark .toolbar {
+  background-color: var(--f7-card-bg-color) !important;
+}
+
+.page {
+  background-color: #f6f6f6;
+}
+
+.dark .page {
+  background-color: var(--f7-page-bg-color) !important;
+}
+
+.login-page {
+  background-color: #efefef;
+}
+
+// Hide all elements
+body.barcode-scanner-active {
+  visibility: hidden;
+}
+
+// Show only the barcode scanner modal
+.barcode-scanner-modal {
+  visibility: visible;
+  background: transparent;
+}
+
+.sheet-modal-inner .page-content {
+  background: white;
+}
