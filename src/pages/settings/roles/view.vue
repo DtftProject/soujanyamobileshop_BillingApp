@@ -1,0 +1,36 @@
+<template>
+    <f7-page>
+        <f7-navbar :title="item.name" :back-link="$t('common.back')"> </f7-navbar>
+
+        <f7-card>
+            <f7-card-content :padding="false">
+                <f7-list media-list dividers-ios strong-ios outline-ios>
+                    <f7-list-item
+                        :title="$t('role.display_name')"
+                        :subtitle="item.display_name"
+                    />
+                    <f7-list-item :title="$t('role.role_name')" :subtitle="item.name" />
+                </f7-list>
+            </f7-card-content>
+        </f7-card>
+
+        <f7-block-title>
+            {{ $t("role.description") }}
+        </f7-block-title>
+        <f7-card>
+            <f7-card-content>
+                <p>{{ item.description ? item.description : "-" }}</p>
+            </f7-card-content>
+        </f7-card>
+    </f7-page>
+</template>
+
+<script>
+export default {
+    props: {
+        f7router: Object,
+        f7route: Object,
+        item: {},
+    },
+};
+</script>
