@@ -1,0 +1,7 @@
+{
+  "name": "Stockifly",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "custom"
+}

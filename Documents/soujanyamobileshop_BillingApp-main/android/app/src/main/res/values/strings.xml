@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Soujanya</string>
+    <string name="title_activity_main">Soujanya</string>
+    <string name="package_name">onepos.uz</string>
+    <string name="custom_url_scheme">onepos.uz</string>
+</resources>
